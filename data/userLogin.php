@@ -13,5 +13,4 @@ if(isset($_POST['un']) && isset($_POST['pw']) ){
 		$_SESSION['user_logged'] = $result['user_id'];
 	}
 	echo json_encode($return);
-
 }

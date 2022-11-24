@@ -23,7 +23,7 @@
                 </h1>
               </div>
               <form class="login-form" id="UserLoginForm" method="post" accept-charset="utf-8">
-                <h2 id="email"> Email </h2>
+                <h2 id="email"> Username </h2>
                 <div class="control-group mb-4">
                   <div class="input-prepend">
                     <span class="add-on"><i class="icon-user"></i></span>
@@ -43,11 +43,13 @@
                            Remember Me?
                   </label>
                 </div>
+
+                <div class="control-group">
+                  <p class="text-white">Don't have an account? <a href="signUp.php">Sign Up</a></p>
+                </div>
+
                 <div class="control-group mt-4 text-center bg-primary">
                   <input class="btn btn-custom text-white fw-bolder py-2" type="submit" value="Sign In"> 
-                </div>
-                <div class="control-group mt-4 text-center bg-primary">
-                  <input class="btn btn-custom text-white fw-bolder py-2" type="submit" value="Sign Up"> 
                 </div>
     
               </form>
