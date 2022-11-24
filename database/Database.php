@@ -12,8 +12,48 @@ class Database extends Connection{
 			session_start();//start session if session not start
 		}
 	}
+    //get row
+	public function getRow($query, $params = []){
+		try {
+			$stmt = $this->datab->prepare($query);
+			$stmt->execute($params);
+			return $stmt->fetch();	
+		} catch (PDOException $e) {
+			throw new Exception($e->getMessage());	
+		}
 
-    
+
+	}//end getRow
+
+	//get rows
+	public function getRows($query, $params = []){
+		try {
+			$stmt = $this->datab->prepare($query);
+			$stmt->execute($params);
+			return $stmt->fetchAll();	
+		} catch (PDOException $e) {
+			throw new Exception($e->getMessage());	
+		}
+	}//end getRows
+
+    //insert row
+	public function insertRow($query, $params = []){
+		try {
+			$stmt = $this->datab->prepare($query);
+			$stmt->execute($params);
+			return TRUE;	
+		} catch (PDOException $e) {
+			throw new Exception($e->getMessage());	
+		}
+
+	}//end insertRow
+
+    //update row
+	public function updateRow($query, $params = []){
+		$this->insertRow($query, $params);
+		return true;
+	}//end updateRow
+
 }// End of Database Function
 
 ?>
