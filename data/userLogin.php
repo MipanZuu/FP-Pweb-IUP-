@@ -9,7 +9,7 @@ if(isset($_POST['un']) && isset($_POST['pw']) ){
 	$return['valid'] = false;
 	if($result > 0){
 		$return['valid'] = true;
-		$return['url'] = "html/home.php";
+		$return['url'] = "home.php";
 		$_SESSION['user_logged'] = $result['user_id'];
 	}
 	echo json_encode($return);

@@ -9,10 +9,10 @@ class Connection {
     public function __construct($username="root", $password="", $host="localhost", $dbname="TXEcommerce", $options=[]){
         $this->isConn = TRUE;
         try{
-            $this->datab = new PDO("mysql:host={$host};  dbname={$dbname}; charset=utf8", $username, $password, $options);
-			$this->datab->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			$this->transaction = $this->datab;
-			$this->datab->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+            $this->db = new PDO("mysql:host={$host};  dbname={$dbname}; charset=utf8", $username, $password, $options);
+			$this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			$this->transaction = $this->db;
+			$this->db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
             // echo 'Connected Successfully!!';
         }
         catch(PDOException $e){

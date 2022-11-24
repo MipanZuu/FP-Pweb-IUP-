@@ -1,6 +1,5 @@
 $(document).on('submit', '#UserLoginForm', function(event) {
     event.preventDefault();
-    /* Act on the event */
     var un = $('#UserUsername').val();
     var pw = $('#UserPassword').val();
     $.ajax({

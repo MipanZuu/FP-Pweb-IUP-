@@ -15,7 +15,7 @@ class Database extends Connection{
     //get row
 	public function getRow($query, $params = []){
 		try {
-			$stmt = $this->datab->prepare($query);
+			$stmt = $this->db->prepare($query);
 			$stmt->execute($params);
 			return $stmt->fetch();	
 		} catch (PDOException $e) {
@@ -28,7 +28,7 @@ class Database extends Connection{
 	//get rows
 	public function getRows($query, $params = []){
 		try {
-			$stmt = $this->datab->prepare($query);
+			$stmt = $this->db->prepare($query);
 			$stmt->execute($params);
 			return $stmt->fetchAll();	
 		} catch (PDOException $e) {
@@ -39,7 +39,7 @@ class Database extends Connection{
     //insert row
 	public function insertRow($query, $params = []){
 		try {
-			$stmt = $this->datab->prepare($query);
+			$stmt = $this->db->prepare($query);
 			$stmt->execute($params);
 			return TRUE;	
 		} catch (PDOException $e) {
