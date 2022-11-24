@@ -1,5 +1,5 @@
 ## Denta Bramasta Database on PHPMYADMIN
-1. create database name 'TXEcommerce'
+1. create database name 'TXEcommerce' // just incase the import is fail.
 2. then import all the database inside of folder IputDB
 3. sql for users (Admin, admin)
 
