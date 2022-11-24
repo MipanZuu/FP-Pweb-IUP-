@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Login | TEAM-X </title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-dark font-monospace">
@@ -14,7 +14,7 @@
           <div class="span12">
             <div class="login well well-small">
               <div class="center">
-                <img src="../assets/logo/our-logo.png" alt="OUR LOGO">
+                <img src="dist/logo/our-logo.png" alt="OUR LOGO">
                 <h1>
                     E-Commerce System
                     <span class="fs-6">
@@ -22,7 +22,7 @@
                     </span>
                 </h1>
               </div>
-              <form action="/users/login" class="login-form" id="UserLoginForm" method="post" accept-charset="utf-8">
+              <form class="login-form" id="UserLoginForm" method="post" accept-charset="utf-8">
                 <h2 id="email"> Email </h2>
                 <div class="control-group mb-4">
                   <div class="input-prepend">
@@ -63,5 +63,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <script src="assets/js/login.js"></script>
-<script src="assets/js/dist/jquery.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
 </html>
