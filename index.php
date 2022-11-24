@@ -44,7 +44,10 @@
                   </label>
                 </div>
                 <div class="control-group mt-4 text-center bg-primary">
-                  <input class="btn btn-custom text-white fw-bolder py-2" type="submit" value="Login"> 
+                  <input class="btn btn-custom text-white fw-bolder py-2" type="submit" value="Sign In"> 
+                </div>
+                <div class="control-group mt-4 text-center bg-primary">
+                  <input class="btn btn-custom text-white fw-bolder py-2" type="submit" value="Sign Up"> 
                 </div>
     
               </form>

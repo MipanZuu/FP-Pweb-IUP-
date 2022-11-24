@@ -55,7 +55,7 @@
             </li>
             <!-- Avatar -->
             <li class="nav-item px-4 py-1 bg-primary text-center">
-                <a class="nav-link d-flex align-items-center text-white fw-bolder" href="#" id="navbarDropdownMenuLink" role="button">
+                <a class="nav-link d-flex align-items-center text-white fw-bolder" href="logout.php" id="navbarDropdownMenuLink" role="button">
                     <h6 class="my-auto pe-2"> LOGOUT </h6>
                 </a>
             </li>
