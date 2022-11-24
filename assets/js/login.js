@@ -1,10 +1,10 @@
 $(document).on('submit', '#form-login', function(event) {
     event.preventDefault();
     /* Act on the event */
-    var un = $('#username').val();
-    var pw = $('#password').val();
+    var un = $('#UserUsername').val();
+    var pw = $('#UserPassword').val();
     $.ajax({
-          url: 'data/user_login.php',
+          url: 'data/userLogin.php',
           type: 'post',
           dataType: 'json',
           data: {
@@ -20,7 +20,7 @@ $(document).on('submit', '#form-login', function(event) {
             }
           },
           error: function(){
-            alert('Error: Login.js L13+');
+            alert('Error: Login');
           }
         });//end a req
   });

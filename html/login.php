@@ -44,7 +44,7 @@
                   </label>
                 </div>
                 <div class="control-group mt-4 text-center bg-primary">
-                  <input class="btn btn-custom text-white fw-bolder py-2" type="submit" value="LOGIN"> 
+                  <input class="btn btn-custom text-white fw-bolder py-2" type="submit" value="Login"> 
                 </div>
     
               </form>
@@ -61,4 +61,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/login.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
 </html>
