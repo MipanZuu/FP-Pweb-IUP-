@@ -63,5 +63,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <script src="assets/js/login.js"></script>
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="assets/js/dist/jquery.min.js"></script>
 </html>
