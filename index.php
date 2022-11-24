@@ -14,8 +14,8 @@
           <div class="span12">
             <div class="login well well-small">
               <div class="center">
-                <img src="dist/logo/our-logo.png" alt="OUR LOGO">
-                <h1>
+                <img src="dist/logo/teamx-text-color.png" alt="OUR LOGO" class="mt-5">
+                <h1 class="mt-4">
                     E-Commerce System
                     <span class="fs-6">
                         by TEAM-X
