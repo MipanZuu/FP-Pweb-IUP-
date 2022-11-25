@@ -21,6 +21,6 @@
     <img alt="Javascript Support" src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" />
 </p>
 
-<center>
+<p align="center">
     <small>Denta Bramasta Hidayat · Mochamad Fachry Dwi Handoko · Shafina Chaerunisa · Selomita Zafiirah · Muhammad Fatih Akbar</small>
-</center>
+ </p>
