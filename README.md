@@ -1,6 +1,7 @@
-# Team X - E-Commerce
+# Team X 
 
-## PWeb IUP
+## Web Programming IUP
+## E-Commerce Project
 
 ### Denta Bramasta Hidayat
 ### Muhammad Fatih Akbar
