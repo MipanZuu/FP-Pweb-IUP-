@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../styles/home.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="assets/styles/tittle.css">
 </head>
 <body>
     <!--Main Navigation-->
@@ -98,6 +99,7 @@
 
         <!-- Section-->
         <section class="py-5">
+            <h2 class="tittle">Featured products</h2>
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                     <div class="col mb-5">
