@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Login | TEAM-X </title>
+    <title> Sign Up | TEAM-X </title>
     <link rel="stylesheet" href="assets/styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -16,7 +16,7 @@
               <div class="center">
                 <img src="dist/logo/teamx-text-color.png" alt="OUR LOGO" class="mt-5">
                 <h1 class="mt-4">
-                    E-Commerce System
+                    E-Commerce Website
                     <span class="fs-6">
                         by TEAM-X
                     </span>

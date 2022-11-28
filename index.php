@@ -16,7 +16,7 @@
               <div class="center">
                 <img src="dist/logo/teamx-text-color.png" alt="OUR LOGO" class="mt-5">
                 <h1 class="mt-4">
-                    E-Commerce System
+                    E-Commerce Website
                     <span class="fs-6">
                         by TEAM-X
                     </span>
