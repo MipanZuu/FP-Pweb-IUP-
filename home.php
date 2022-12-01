@@ -1,3 +1,11 @@
+<?php 
+    include_once('./database/Connection.php');
+    $selectquantity= "SELECT item_quantity from item WHERE item_code = 1";
+    $query = mysqli_query($isConn, $selectquantity);
+    $nums = mysqli_num_rows($query);
+    return $nums;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +20,10 @@
 </head>
 <body>
     <!--Main Navigation-->
+    <?php
+    include_once('./database/Connection.php');
+    include_once('./database/Database.php')
+    ?>
     <header>
         <!-- Navbar-->
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
@@ -98,7 +110,7 @@
     </div>
 
         <!-- Section-->
-        <section class="py-5">
+        <section id="products" class="py-5">
             <h2 class="tittle">Featured products</h2>
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
@@ -124,14 +136,14 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
                             <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <img class="card-img-top" src="./dist/products/product1.jpeg" alt="laptop" />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Special Item</h5>
+                                    <h5 class="fw-bolder">Macbook Pro M2</h5>
                                     <!-- Product reviews-->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
@@ -339,7 +351,8 @@
       <!-- Github -->
       <a
         class="btn btn-link btn-floating btn-lg text-light m-1"
-        href="#!"
+        target="_blank"
+        href="https://github.com/MipanZuu/FP-Pweb-IUP-"
         role="button"
         data-mdb-ripple-color="dark"
         ><i class="fab fa-github"></i
