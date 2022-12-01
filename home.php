@@ -1,5 +1,5 @@
-<?php 
-require_once('./data/products.php');
+<?php
+    require_once('session.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,17 +8,13 @@ require_once('./data/products.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Home | TEAM-X </title>
-    <link rel="stylesheet" href="../styles/home.css">
+    <!-- <link rel="stylesheet" href="./assets/styles/home.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <link rel="stylesheet" href="assets/styles/tittle.css">
 </head>
 <body>
     <!--Main Navigation-->
-    <?php
-    include_once('./database/Connection.php');
-    include_once('./database/Database.php')
-    ?>
     <header>
         <!-- Navbar-->
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
@@ -117,7 +113,8 @@ require_once('./data/products.php');
         <section id="products" class="py-5">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    <div class="col mb-5">
+                    <div id="allProducts"></div>
+                <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
                             <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
@@ -136,6 +133,7 @@ require_once('./data/products.php');
                             </div>
                         </div>
                     </div>
+
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Sale badge-->
@@ -371,8 +369,9 @@ require_once('./data/products.php');
   </div>
   <!-- Copyright -->
 </footer>
-<script src="../scripts/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script src="assets/js/admin.js"></script>
 </html>

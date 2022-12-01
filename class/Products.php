@@ -5,12 +5,11 @@
     class Products extends Database implements iProducts {
         public function getAllProducts()
         {
-		$sql = "SELECT *
+		$sql = "SELECT item_name, item_price, item_image
 				FROM item
                 WHERE item_code = ?";
-		return $this->getRows($sql, []);
+		return $this->getRow($sql);
         }
 
     }
-
     $product = new Products();

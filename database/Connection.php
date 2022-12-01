@@ -5,6 +5,7 @@ class Connection {
     protected $isConn;
     protected $db;
     protected $transaction;
+    public $con;
 
     public function __construct($username="root", $password="", $host="localhost", $dbname="TXEcommerce", $options=[]){
         $this->isConn = TRUE;
