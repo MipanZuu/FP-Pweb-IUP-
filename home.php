@@ -1,11 +1,3 @@
-<?php 
-    include_once('./database/Connection.php');
-    $selectquantity= "SELECT item_quantity from item WHERE item_code = 1";
-    $query = mysqli_query($isConn, $selectquantity);
-    $nums = mysqli_num_rows($query);
-    return $nums;
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
