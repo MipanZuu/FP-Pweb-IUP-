@@ -40,13 +40,13 @@ CREATE TABLE `item` (
 
 INSERT INTO `item` (`item_code`, `item_name`, `item_price`, `item_image`) VALUES
 (1, 'Apple Macbook Pro', 20000000, './dist/products/product1.jpeg'),
-(2, 'Fujifilm X-T20', 14499000, '.upload/product2.png'),
-(3, 'Galaxy Z Flip4', 13999000, '.upload/product3.png'),
-(4, 'Laptop HP 14s', 5335000, '.upload/product4.png'),
-(5, 'GoPro Hero 7', 5000000, '.upload/product5.png'),
-(6, 'Philips Hepa Filter 800', 454000, '.upload/product6.png'),
-(7, 'Dyson Vacuum Cleaner', 9999000, '.upload/product7.png'),
-(8, 'HiBREW Coffee Maker', 988000, '.upload/product8.png');
+(2, 'Fujifilm X-T20', 14499000, './dist/products/product2.jpeg'),
+(3, 'Galaxy Z Flip4', 13999000, './dist/products/product3.jpeg'),
+(4, 'Laptop HP 14s', 5335000, './dist/products/product4.jpeg'),
+(5, 'GoPro Hero 7', 5000000, './dist/products/product5.jpeg'),
+(6, 'Philips Hepa Filter 800', 454000, './dist/products/product6.jpeg'),
+(7, 'Dyson Vacuum Cleaner', 9999000, './dist/products/product7.jpeg'),
+(8, 'HiBREW Coffee Maker', 988000, './dist/products/product8.jpeg');
 
 --
 -- Indexes for dumped tables

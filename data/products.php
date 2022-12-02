@@ -5,6 +5,7 @@ $products = $product->getAllProducts();
 <?php foreach($products as $p): ?>
                 <div class="col mb-5">
                         <div class="card h-100">
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                             <!-- Product image-->
                             <img class="card-img-top" src="<?= $p['item_image']; ?>" alt="image_products" />
                             <!-- Product details-->
