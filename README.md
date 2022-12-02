@@ -22,5 +22,5 @@
 </p>
 
 <p align="center">
-    <small>Denta Bramasta Hidayat · Mochamad Fachry Dwi Handoko · Shafina Chaerunisa · Selomita Zafiirah · Muhammad Fatih Akbar</small>
+    <small>Denta Bramasta Hidayat · Mochamad Fachry Dwi Handoko · Shafina Chaerunisa · Selomita Zhafiirah · Muhammad Fatih Akbar</small>
  </p>

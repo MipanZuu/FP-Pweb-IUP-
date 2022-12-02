@@ -91,7 +91,7 @@
                         - Denta Bramasta Hidayat <br>
                         - Muhammad Fatih Akbar <br>
                         - Shafina Chaerunissa <br>
-                        - Selomita Zhafirah <br>
+                        - Selomita Zhafiirah <br>
                         - Mohammed Fachry DwiHandoko
                     </p>
                     <button class="btn btn-primary px-4 py-2 rounded-0 action-button" type="button">
