@@ -1,5 +1,5 @@
 <?php 
-require_once('./class/Products.php');
+require_once('../class/Products.php');
 $products = $product->getAllProducts();
 ?>
 <?php foreach($products as $p): ?>
