@@ -2,10 +2,10 @@
 require_once('./class/Products.php');
 $products = $product->getAllProducts();
 ?>
+<?php foreach($products as $p): ?>
                 <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <?php foreach($products as $p): ?>
                             <img class="card-img-top" src="<?= $p['item_image']; ?>" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
@@ -20,7 +20,6 @@ $products = $product->getAllProducts();
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
                             </div>
-                            <?php endforeach; ?>
                         </div>
                     </div>
-<?php $product->Disconnect() ?>
+<?php endforeach; ?>

@@ -3,11 +3,10 @@
     require_once('../interface/iProducts.php');
 
     class Products extends Database implements iProducts {
+        
         public function getAllProducts()
         {
-		$sql = "SELECT item_name, item_price, item_image
-				FROM item
-                WHERE item_code = ?";
+		$sql = "SELECT * FROM item ORDER BY item_code DESC";
 		return $this->getRow($sql);
         }
 

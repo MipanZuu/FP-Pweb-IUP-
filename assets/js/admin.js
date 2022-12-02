@@ -6,7 +6,7 @@ function eMsg(message) {
 //all products
 function getAllProducts() {
     $.ajax({
-      url: "data/products.php",
+      url: "./data/products.php",
       type: "post",
       data: {},
       success: function (data) {
