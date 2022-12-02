@@ -6,7 +6,7 @@ $products = $product->getAllProducts();
                 <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="<?= $p['item_image']; ?>" alt="..." />
+                            <img class="card-img-top" src="<?= $p['item_image']; ?>" alt="image_products" />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">

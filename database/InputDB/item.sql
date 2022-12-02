@@ -39,7 +39,7 @@ CREATE TABLE `item` (
 --
 
 INSERT INTO `item` (`item_code`, `item_name`, `item_price`, `item_image`) VALUES
-(1, 'Apple Macbook Pro', 20000000, '.upload/product1.png'),
+(1, 'Apple Macbook Pro', 20000000, './dist/products/product1.jpeg'),
 (2, 'Fujifilm X-T20', 14499000, '.upload/product2.png'),
 (3, 'Galaxy Z Flip4', 13999000, '.upload/product3.png'),
 (4, 'Laptop HP 14s', 5335000, '.upload/product4.png'),
