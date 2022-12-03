@@ -6,7 +6,7 @@
         
         public function getAllProducts()
         {
-		$sql = "SELECT * FROM item ORDER BY item_code DESC";
+		$sql = "SELECT * FROM item ORDER BY item_code ASC";
 		return $this->getRows($sql);
         }
 

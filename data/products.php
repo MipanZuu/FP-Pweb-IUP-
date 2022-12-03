@@ -26,3 +26,5 @@ $products = $product->getAllProducts();
                         </div>
                     </div>
 <?php endforeach; ?>
+
+

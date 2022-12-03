@@ -27,7 +27,7 @@
             <!-- Search form -->
             <form class="d-flex input-group w-auto my-auto">
                 <input autocomplete="off" type="search" class="form-control rounded fst-italic" placeholder="Search"
-                style="min-width: 125px" />
+                style="min-width: 125px" aria-controls="allProducts"/>
                 <span class="input-group-text border-0 d-none d-md-flex"><i class="fas fa-search"></i></span>
             </form>
             </div>
