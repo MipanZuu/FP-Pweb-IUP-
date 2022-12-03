@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Home | TEAM-X </title>
-    <!-- <link rel="stylesheet" href="./assets/styles/home.css"> -->
+    <link rel="stylesheet" href="./assets/styles/home.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <link rel="stylesheet" href="assets/styles/tittle.css">
@@ -98,12 +98,6 @@
                         Our Products
                     </button>
                 </div>
-                <!-- <div
-                    class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block logo-holder">
-                    <div class="our-logo">
-                        <img src="" class="logo">
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
@@ -112,6 +106,7 @@
         <h2 class="tittle mt-5">Featured products</h2>
         <section id="products" class="py-5">
             <div class="container px-4 px-lg-5">
+                <!-- Displaying all products here -->
                 <div id="allProducts" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
    
                 </div>
