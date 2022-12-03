@@ -2,7 +2,9 @@
 require_once('../class/Products.php');
 $products = $product->getAllProducts();
 ?>
-<?php foreach($products as $p): ?>
+<?php foreach($products as $p): 
+    $rupiah = $p['item_price'];
+?>
                 <div class="col mb-5">
                         <div class="card h-100">
                         <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
@@ -14,7 +16,7 @@ $products = $product->getAllProducts();
                                     <!-- Product name-->
                                     <h5 class="fw-bolder"><?= $p['item_name']; ?></h5>
                                     <!-- Product price-->
-                                    <?= $p['item_price']; ?>
+                                    <?= 'Rp '.number_format($rupiah,2,',','.'); ?>
                                 </div>
                             </div>
                             <!-- Product actions-->
