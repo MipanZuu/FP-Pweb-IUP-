@@ -19,24 +19,16 @@ function getAllProducts() {
   } //end all_laundry
   getAllProducts();
 
-// $(document).ready (function(){
-
-//   $("#SearchItems").keyup(function(){
-//     var input = $(this).val();
-
-//     if (input != "") {
-//       $.ajax({
-//         url: "./data/searchProducts.php",
-//         type: "post",
-//         data: {input:input},
-
-//         success:function (data){
-//           $("#searchResult").html(data);
-//         }
-//       });
-//     }
-//     else {
-//       $("#searchResult").css("display", "none");
-//     }
-//   });
-// });
+  function cartProducts() {
+    $.ajax({
+      url: 'action.php',
+      method: 'get',
+      data: {
+        cartItem: "cart_item"
+      },
+      success: function(response) {
+        $("#cart-item").html(response);
+      }
+    });
+  }
+cartProducts();
