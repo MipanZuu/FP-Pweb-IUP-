@@ -1,14 +1,21 @@
 <?php
     require_once('../database/Database.php');
-    require_once('../interface/iProducts.php');
+    require_once('../interface/iCart.php');
 
-    class Products extends Database implements iProducts {
+    class Cart extends Database implements iCart {
         
-        public function getAllProducts()
-        {
-		$sql = "SELECT * FROM item ORDER BY item_code ASC";
-		return $this->getRows($sql);
-        }
+    public function getAllcart()
+    {
+	$sql = "SELECT * FROM cart ORDER BY cart_id ASC";
+	return $this->getRows($sql);
+    }
+
+    public function insertCart($item_name, $item_price, $item_image, $item_quantity)
+	{
+	$sql = "INSERT INTO laundry(item_name, item_price, item_image, item_quantity)
+    VALUES(?,?,?,?);";
+	return $this->insertRow($sql, [$item_name, $item_price, $item_image, $item_quantity]);
+	}
 
     }
-    $product = new Products();
+    $cart = new Cart();

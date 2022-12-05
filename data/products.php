@@ -21,7 +21,7 @@ $products = $product->getAllProducts();
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <div class="text-center"><button name="addToCart" id="<?= $p['item_id']; ?>" class="btn btn-outline-dark mt-auto">Add to cart</button></div>
                             </div>
                         </div>
                     </div>

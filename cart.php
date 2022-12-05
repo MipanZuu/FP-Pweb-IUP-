@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Shopping Cart | TEAM-X </title>
-    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="./assets/styles/home.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <link rel="stylesheet" href="assets/styles/tittle.css">
@@ -87,32 +87,7 @@
             <div id="cartProducts">
 
             </div>
-            <div class="card mb-3 shadow-sm d-flex flex-row">
-                <img src="https://dummyimage.com/100x100/dee2e6/6c757d.jpg" alt="Thumbnail" style="width: 100px;">
-                <div class="container px-4 d-flex flex-row ">
-                    <p class="fs-4 fw-semibold my-auto me-auto" >Fancy Electronic Product</p>
-                    <div class="my-auto me-4" style="width: 8rem;">
-                        <div class="input-group">
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-secondary btn-number" data-type="minus" data-field="quant[1]">-</button>
-                            </span>
-                            <input type="text" name="quant[1]" class="form-control input-number text-center" value="1" min="1" max="10">
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">+</button>
-                            </span>
-                        </div>
-                    </div>
-                    <p class="fs-3 fw-regular my-auto me-4">$100.00</p>
-                </div>
-                <button type="buttton" class="btn btn-default border-start px-4 fs-4 text-black-50">X</button>
-            </div>
-
-
-            <div class="px-4 d-flex flex-row justify-content-end mb-4">
-                <p class="fs-3 my-auto text-black-50 me-1" >Subtotal:</p>
-                <p class="fs-2 fw-semibold my-auto text-black-50" >$500.00</p>
-            </div>
-
+            
             <div class="px-4 d-flex flex-row">
                 <button type="button" class="btn btn-secondary btn-number me-auto">Return Shopping</button>
                 <button type="button" class="btn btn-primary btn-number">Go to Checkout</button>
@@ -174,8 +149,5 @@
   </div>
   <!-- Copyright -->
 </footer>
-<script src="../scripts/main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<?php include_once('script.php'); ?>
 </html>

@@ -21,13 +21,11 @@ function getAllProducts() {
 
   function cartProducts() {
     $.ajax({
-      url: 'action.php',
-      method: 'get',
-      data: {
-        cartItem: "cart_item"
-      },
+      url: './data/cartProducts.php',
+      type: 'post',
+      data: {},
       success: function(response) {
-        $("#cart-item").html(response);
+        $("#cartProducts").html(response);
       }
     });
   }
