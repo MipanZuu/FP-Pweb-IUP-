@@ -47,11 +47,20 @@ function getAllProducts() {
   //   });
   // });
 
-  $('.addToCart').click(function(e){
-    e.preventDefault();
-
+  $(document).on('click', '.addToCart', function(){
     var item_id = $(this).val();
     alert(item_id);
+
+    $.ajax({
+      url: './data/addToCart.php',
+      type: 'post',
+      data: {
+        "item_id":item_id,
+      },
+      success: function(response) {
+        alert("Success Delete Cart");
+      }
+    });
   });
 
   $(document).on('click', '#delCart', function(){
