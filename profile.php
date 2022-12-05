@@ -75,6 +75,7 @@
         <!-- Navbar -->
     </header>
 
+    
      <!-- footer -->
 <footer id="contact" class="text-center text-white" style="background-color: #2F3537;">
   <!-- Grid container -->
