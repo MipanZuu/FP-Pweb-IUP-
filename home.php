@@ -107,10 +107,14 @@
     <div class="container">
   <div class="row">
     <div class="col-sm justify-content-center text-center">
-      Brochure
+    <a href="./dist/flyer/COLD SALES.png" download="COLD SALES.png">
+        <img style="width: 300px;" src="./dist/flyer/COLD SALES.png" alt="">
+    </a>
     </div>
     <div class="col-sm justify-content-center text-center">
-      Brochure
+    <a href="./dist/flyer/Discounts Flyer.png" download="Discounts Flyer.png">
+        <img style="width: 300px;" src="./dist/flyer/Discounts Flyer.png" alt="">
+    </a>
     </div>
   </div>
 </div>
