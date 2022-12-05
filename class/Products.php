@@ -12,7 +12,9 @@
 
         public function getSingleProduct($item_id)
         {
-		$sql = "SELECT * FROM item WHERE item_id = ?";
+		$sql = "SELECT * FROM item 
+        WHERE item_id = ?
+        ORDER BY item_id ASC";
 		return $this->getRows($sql, [$item_id]);
         }
 

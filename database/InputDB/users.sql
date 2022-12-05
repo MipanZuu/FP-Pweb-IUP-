@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 27, 2022 at 01:44 PM
--- Server version: 10.4.25-MariaDB
--- PHP Version: 8.1.10
+-- Waktu pembuatan: 05 Des 2022 pada 15.24
+-- Versi server: 10.4.27-MariaDB
+-- Versi PHP: 8.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Struktur dari tabel `users`
 --
 
 CREATE TABLE `users` (
@@ -32,10 +32,10 @@ CREATE TABLE `users` (
   `UserEmail` varchar(100) NOT NULL,
   `UserName` varchar(100) NOT NULL,
   `UserPassword` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `users`
+-- Dumping data untuk tabel `users`
 --
 
 INSERT INTO `users` (`user_id`, `UserEmail`, `UserName`, `UserPassword`) VALUES
@@ -54,27 +54,28 @@ INSERT INTO `users` (`user_id`, `UserEmail`, `UserName`, `UserPassword`) VALUES
 (13, 'sabrinacarpenter@gmail.com', 'sabrinac', 'nsgddhdlapkhsg123faf67'),
 (14, 'kathmcphee@gmail.com', 'katherine45', 'hdfaddqdjnonjn3421'),
 (15, 'milliebrown@gmail.com', 'milliebrown', 'brown1234m678hbudjbfjud'),
-(16, 'sheltonbrad@gmail.com', 'bradleysheltonnn', 'jndjfnvidbnhbfas1234gvsgvd');
+(16, 'sheltonbrad@gmail.com', 'bradleysheltonnn', 'jndjfnvidbnhbfas1234gvsgvd'),
+(17, 'admin@gmail.com', 'asfasf', '827ccb0eea8a706c4c34a16891f84e7b');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `users`
+-- Indeks untuk tabel `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`user_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

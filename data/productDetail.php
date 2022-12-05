@@ -1,17 +1,18 @@
 <?php 
 require_once('../class/Products.php');
-if(isset($_GET['item_id'])){
-	$item_id = $_GET['item_id'];
-	$result = $product->getSingleProduct($item_id);
+if(isset($_POST['item_id'])){
+	$item_id = $_POST['item_id'];
+	$products = $product->getSingleProduct($item_id);
     // echo '<pre>';
 	// 	print_r($result);
 	// echo '</pre>';
 }//end isset
 ?>
-<section class="py-5">
-<?php foreach($result as $p): 
+
+<?php foreach($products as $p): 
     $rupiah = $p['item_price'];
 ?>
+<section class="py-5">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
                     <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="<?= $p['item_image']; ?>" alt="..." /></div>
@@ -39,5 +40,5 @@ if(isset($_GET['item_id'])){
                     </div>
                 </div>
             </div>
-            <?php endforeach; ?>
         </section>
+<?php endforeach; ?>

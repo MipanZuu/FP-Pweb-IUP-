@@ -47,6 +47,13 @@ function getAllProducts() {
   //   });
   // });
 
+  $('.addToCart').click(function(e){
+    e.preventDefault();
+
+    var item_id = $(this).val();
+    alert(item_id);
+  });
+
   $(document).on('click', '#delCart', function(){
     var cart_id = $(this).val();
     // alert(cart_id);
@@ -62,28 +69,28 @@ function getAllProducts() {
     });
   });
 
-  $(document).on('click', '#viewItems', function(){
-    var item_id = $(this).val();
-    alert(item_id);
+  // $(document).on('click', '#viewItems', function(){
+  //   var item_id = $(this).val();
+  //   alert(item_id);
 
-    $.ajax({
-      url: './data/productDetail.php',
-      type: 'post',
-      data: {
-        item_id:item_id,
-      },
-      success: function(data) {
-        $("#productView").html(data);
-        window.open("product-details.php?=" + item_id);
-      }
-    });
-  });
+  //   $.ajax({
+  //     url: './data/productDetail.php',
+  //     type: 'post',
+  //     data: {
+  //       item_id:item_id,
+  //     },
+  //     success: function(data) {
+  //       $("#productView").html(data);
+  //       window.open("product-details.php?=" + item_id);
+  //     }
+  //   });
+  // });
 
   // function getSingleProduct() {
   //   var item_id = $("$viewItems").val();
-  //   alert(item_id);
+  //   // alert(item_id);
   //   $.ajax({
-  //   product-details.php?p=<?= $p['item_name'];
+  //   // product-details.php?p=<?= $p['item_name'];
   //     url: './data/productDetail.php',
   //     type: 'post',
   //     data: {
@@ -98,3 +105,22 @@ function getAllProducts() {
   //   });
   // } //end all_laundry
   // getSingleProduct();
+
+  // $("#viewItems").change(function (e) {
+  //   e.preventDefault();
+  //   var item_id = $("#viewItems").val();
+
+  //   $.ajax({
+  //     url: './data/productDetail.php',
+  //     type: 'post',
+  //     data: {
+  //       item_id: item_id,
+  //     },
+  //     success: function (data) {
+  //       $("#productView").html(data);
+  //     },
+  //     error: function () {
+  //       eMsg(330);
+  //     },
+  //   });
+  // });
