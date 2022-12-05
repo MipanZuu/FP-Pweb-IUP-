@@ -54,6 +54,12 @@ class Database extends Connection{
 		return true;
 	}//end updateRow
 
+	//delete row
+	public function deleteRow($query, $params = []){
+		$this->insertRow($query, $params);
+		return true;
+	}
+
 }// End of Database Function
 
 ?>

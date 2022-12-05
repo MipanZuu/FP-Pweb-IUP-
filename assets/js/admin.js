@@ -29,4 +29,19 @@ function getAllProducts() {
       }
     });
   }
-cartProducts();
+  cartProducts();  
+
+  $(document).on('click', '#delCart', function(){
+    var cart_id = $(this).val();
+    // alert(cart_id);
+    $.ajax({
+      url: './data/cartDelete.php',
+      type: 'post',
+      data: {
+        "cart_id":cart_id,
+      },
+      success: function(response) {
+        // $("#cartProducts").html(response);
+      }
+    });
+  });

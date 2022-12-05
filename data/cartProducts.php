@@ -3,6 +3,7 @@ require_once('../class/Cart.php');
 $carts = $cart->getAllCart();
 ?>
 <?php foreach($carts as $c): 
+    $total_Ceckout = 0;
     $total_price = $c['item_price'] * $c['item_quantity'];
 ?>
 <div class="card mb-3 shadow-sm d-flex flex-row">
@@ -22,7 +23,7 @@ $carts = $cart->getAllCart();
             </div>
         <p class="fs-3 fw-regular my-auto me-4"><?= 'Rp '.number_format($total_price,2,',','.'); ?></p>
         </div>
-    <button type="buttton" class="btn btn-default border-start px-4 fs-4 text-black-50">X</button>
+    <button id="delCart" value="<?= $c['cart_id']; ?>" type="button" class="btn btn-default border-start px-4 fs-4 text-black-50">X</button>
 </div>
 <div class="px-4 d-flex flex-row justify-content-end mb-4">
                 <p class="fs-3 my-auto text-black-50 me-1" >Subtotal:</p>

@@ -17,5 +17,12 @@
 	return $this->insertRow($sql, [$item_name, $item_price, $item_image, $item_quantity]);
 	}
 
+    public function deleteCart($cart_id)
+	{
+		$sql = "DELETE FROM cart
+				WHERE cart_id = ?";
+		return $this->deleteRow($sql, [$cart_id]);
+	}
+
     }
     $cart = new Cart();
