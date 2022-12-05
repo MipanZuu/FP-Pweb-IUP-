@@ -42,15 +42,7 @@
                     </a>
                 </li>
                 <li class="nav-item me-3 me-lg-0 px-lg-2">
-                    <a class="nav-link" href="product-details.php">
-                        <span class="d-none d-lg-inline-block fst-italic">
-                            Shop
-                        </span>
-                        <i class="fas fa-shopping-bag d-inline-block d-lg-none"></i>
-                    </a>
-                </li>
-                <li class="nav-item me-3 me-lg-0 px-lg-2">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="contact.php">
                     <span class="d-none d-lg-inline-block fst-italic">
                         Contact
                     </span>
