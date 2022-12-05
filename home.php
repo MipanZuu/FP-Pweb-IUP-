@@ -103,7 +103,17 @@
         </div>
     </div>
 
-
+ <!-- brochure-->
+    <div class="container">
+  <div class="row">
+    <div class="col-sm justify-content-center text-center">
+      Brochure
+    </div>
+    <div class="col-sm justify-content-center text-center">
+      Brochure
+    </div>
+  </div>
+</div>
 
         <!-- Section-->
         <h2 class="tittle mt-5">Featured products</h2>
