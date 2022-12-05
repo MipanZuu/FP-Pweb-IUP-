@@ -119,6 +119,9 @@
   </div>
 </div>
 
+<section class="py-5" id="productView">
+</section>
+
         <!-- Section-->
         <h2 class="tittle mt-5">Featured products</h2>
         <section id="products" class="py-5">

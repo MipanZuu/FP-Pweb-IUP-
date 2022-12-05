@@ -78,7 +78,8 @@
         <!-- Navbar -->
 
         <!-- Product section-->
-        <div id="productView">
+        <section class="py-5" id="productView">
+        </section>
 
         </div>
         <!-- Related items section-->
