@@ -12,7 +12,7 @@
 
     public function insertCart($item_name, $item_price, $item_image, $item_quantity)
 	{
-	$sql = "INSERT INTO laundry(item_name, item_price, item_image, item_quantity)
+	$sql = "INSERT INTO cart(item_name, item_price, item_image, item_quantity)
     VALUES(?,?,?,?);";
 	return $this->insertRow($sql, [$item_name, $item_price, $item_image, $item_quantity]);
 	}

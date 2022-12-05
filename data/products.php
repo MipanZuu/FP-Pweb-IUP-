@@ -21,7 +21,10 @@ $products = $product->getAllProducts();
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><button name="addToCart" id="<?= $p['item_id']; ?>" class="btn btn-outline-dark mt-auto">Add to cart</button></div>
+                                <div class="text-center"><button id="addToCart" value="<?= $p['item_id']; ?>" class="btn btn-outline-dark mt-auto">Add to cart</button></div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button id="viewItems" value="<?= $p['item_id']; ?>" class="btn btn-outline-dark mt-auto">View</button></div>
                             </div>
                         </div>
                     </div>

@@ -1,3 +1,6 @@
+<?php
+    require_once('session.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -75,38 +78,9 @@
         <!-- Navbar -->
 
         <!-- Product section-->
-        <section class="py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." /></div>
-                    <div class="col-md-6">
-                        <div class="small mb-1">SKU: WIB-343</div>
-                        <h1 class="display-5 fw-bolder">
-                            Product Details
-                        </h1>
-                        <div class="fs-5 mb-5">
-                            <span class="text-decoration-line-through pe-2">
-                                Rp 200.000
-                            </span>
-                            <span>
-                                Rp 150.000
-                            </span>
-                        </div>
-                        <p class="lead pb-3">
-                            Oh-oh, the misery, everybody wants to be my enemy. <br>
-                            Spare the sympathy, everybody wants to be my enemy.
-                        </p>
-                        <div class="d-flex">
-                            <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
-                            <button class="btn btn-outline-primary flex-shrink-0" type="button">
-                                <i class="bi-cart-fill me-1"></i>
-                                Add to cart
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div id="productView">
+
+        </div>
         <!-- Related items section-->
         <section class="py-5 bg-light">
             <div class="container px-4 px-lg-5 mt-5">
@@ -300,8 +274,5 @@
   <!-- Copyright -->
 </footer>
 </body>
-<script src="../scripts/main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<?php include_once('script.php'); ?>
 </html>

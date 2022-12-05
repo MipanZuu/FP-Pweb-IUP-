@@ -10,5 +10,11 @@
 		return $this->getRows($sql);
         }
 
+        public function getSingleProduct($item_id)
+        {
+		$sql = "SELECT * FROM item WHERE item_id = ?";
+		return $this->getRows($sql, [$item_id]);
+        }
+
     }
     $product = new Products();

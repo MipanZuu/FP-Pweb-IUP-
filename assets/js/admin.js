@@ -29,7 +29,23 @@ function getAllProducts() {
       }
     });
   }
-  cartProducts();  
+  cartProducts();
+
+  // $(document).on('click', '#addToCart', function(){
+  //   var item_id = $(this).val();
+  //   // alert(item_id);
+
+  //   $.ajax({
+  //     url: './data/addToCart.php',
+  //     type: 'post',
+  //     data: {
+  //       "item_id":item_id,
+  //     },
+  //     success: function(response) {
+  //       alert("Success add to Cart");
+  //     }
+  //   });
+  // });
 
   $(document).on('click', '#delCart', function(){
     var cart_id = $(this).val();
@@ -41,7 +57,44 @@ function getAllProducts() {
         "cart_id":cart_id,
       },
       success: function(response) {
-        // $("#cartProducts").html(response);
+        alert("Success Delete Cart");
       }
     });
   });
+
+  $(document).on('click', '#viewItems', function(){
+    var item_id = $(this).val();
+    alert(item_id);
+
+    $.ajax({
+      url: './data/productDetail.php',
+      type: 'post',
+      data: {
+        item_id:item_id,
+      },
+      success: function(data) {
+        $("#productView").html(data);
+        window.open("product-details.php?=" + item_id);
+      }
+    });
+  });
+
+  // function getSingleProduct() {
+  //   var item_id = $("$viewItems").val();
+  //   alert(item_id);
+  //   $.ajax({
+  //   product-details.php?p=<?= $p['item_name'];
+  //     url: './data/productDetail.php',
+  //     type: 'post',
+  //     data: {
+  //       item_id:item_id,
+  //     },
+  //     success: function (data) {
+  //       $("#productView").html(data);
+  //     },
+  //     error: function () {
+  //       eMsg(128);
+  //     },
+  //   });
+  // } //end all_laundry
+  // getSingleProduct();
