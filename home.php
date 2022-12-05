@@ -42,17 +42,26 @@
                     </a>
                 </li>
                 <li class="nav-item me-3 me-lg-0 px-lg-2">
-                <a class="nav-link" href="contact.php">
+                <a class="nav-link" href="#contact">
                     <span class="d-none d-lg-inline-block fst-italic">
                         Contact
                     </span>
                     <i class="fas fa-envelope d-inline-block d-lg-none"></i>
                 </a>
                 </li>
-                <li class="nav-item me-3 me-lg-0 ps-lg-2 pe-lg-5">
+                <li class="nav-item me-3 me-lg-0 px-lg-2">
                 <a class="nav-link" href="cart.php">
                     <span class="d-none d-lg-inline-block fst-italic">
                         Cart
+                    </span>
+                    <i class="fas fa-envelope d-inline-block d-lg-none"></i>
+                </a>
+                </li>
+                </li>
+                <li class="nav-item me-3 me-lg-0 ps-lg-2 pe-lg-5">
+                <a class="nav-link" href="profile.php">
+                    <span class="d-none d-lg-inline-block fst-italic">
+                        Profile
                     </span>
                     <i class="fas fa-envelope d-inline-block d-lg-none"></i>
                 </a>
@@ -94,6 +103,8 @@
         </div>
     </div>
 
+
+
         <!-- Section-->
         <h2 class="tittle mt-5">Featured products</h2>
         <section id="products" class="py-5">
@@ -106,7 +117,7 @@
         </section>
 
     <!-- footer -->
-    <footer class="text-center text-white" style="background-color: #2F3537;">
+<footer id="contact" class="text-center text-white" style="background-color: #2F3537;">
   <!-- Grid container -->
   <div class="container pt-4">
     <!-- Social media -->
