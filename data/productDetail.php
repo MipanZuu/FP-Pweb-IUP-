@@ -9,7 +9,7 @@ if(isset($_POST['item_id'])){
 <?php foreach($products as $p): 
     $rupiah = $p['item_price'];
 ?>
-            <div class="container px-4 px-lg-5 my-5">
+            <div class="container px-4 px-lg-5 my-5 product-data">
                 <div class="row gx-4 gx-lg-5 align-items-center">
                     <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="<?= $p['item_image']; ?>" alt="..." /></div>
                     <div class="col-md-6">
@@ -26,8 +26,10 @@ if(isset($_POST['item_id'])){
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perferendis officia perspiciatis sapiente soluta accusamus, expedita, et velit quibusdam excepturi commodi cum! Sed omnis veritatis esse fuga earum, unde ratione. <br>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis minima voluptatem nostrum in voluptate dolorum veritatis temporibus vitae, praesentium aspernatur, aperiam nam, atque ratione iure possimus autem laboriosam dolore exercitationem!
                         </p>
-                        <div class="d-flex">
-                            <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+                        <div class="input-group mb-3">
+                            <button id="decrementButton" class="input-group-text decrementButton">-</button>
+                                <input class="form-control text-center" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+                            <button id="incrementButton" class="input-group-text me-3 incrementButton">+</button>
                             <button class="btn btn-outline-primary flex-shrink-0" type="button">
                                 <i class="bi-cart-fill me-1"></i>
                                 Add to cart

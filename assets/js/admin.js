@@ -94,6 +94,28 @@ function getAllProducts() {
     });
   });
 
+  $(document).on('click', '#incrementButton', function(){
+    var quantity = $(this).closest('.product-data').find('#inputQuantity').val();
+    // alert(quantity);
+    var value = parseInt(quantity, 10);
+    value = isNaN(value) ? 0 : value;
+    if (value < 10) {
+      value++;
+      $(this).closest('.product-data').find('#inputQuantity').val(value);
+    }
+  });
+
+  $(document).on('click', '#decrementButton', function(){
+    var quantity = $(this).closest('.product-data').find('#inputQuantity').val();
+    // alert(quantity);
+    var value = parseInt(quantity, 10);
+    value = isNaN(value) ? 0 : value;
+    if (value > 1) {
+      value--;
+      $(this).closest('.product-data').find('#inputQuantity').val(value);
+    }
+  });
+
   // function getSingleProduct() {
   //   var item_id = $("$viewItems").val();
   //   // alert(item_id);
