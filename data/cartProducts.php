@@ -8,16 +8,16 @@ $carts = $cart->getAllCart();
 ?>
 <div class="card mb-3 shadow-sm d-flex flex-row">
         <img src="<?= $c['item_image']; ?>" alt="Thumbnail" style="width: 100px;">
-            <div class="container px-4 d-flex flex-row ">
+            <div class="container px-4 d-flex flex-row product-data">
                 <p class="fs-4 fw-semibold my-auto me-auto" ><?= $c['item_name']; ?></p>
             <div class="my-auto me-4" style="width: 8rem;">
                 <div class="input-group">
                     <span class="input-group-btn">
-                        <button type="button" class="btn btn-secondary btn-number" data-type="minus" data-field="quant[1]"><?= $c['item_quantity']; ?></button>
+                        <button id="decrementButton" type="button" class="btn btn-secondary btn-number decrementButton">-</button>
                     </span>
-                    <input type="text" name="quant[1]" class="form-control input-number text-center" value="1" min="1" max="10">
+                    <input id="inputQuantity" type="text" name="quant[1]" class="form-control input-number text-center" value="1" min="1" max="10">
                         <span class="input-group-btn">
-                            <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">+</button>
+                            <button id="incrementButton" type="button" class="btn btn-primary btn-number incrementButton">+</button>
                         </span>
                 </div>
             </div>
