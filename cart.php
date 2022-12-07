@@ -90,7 +90,7 @@
             </div>
             
             <div class="px-4 d-flex flex-row">
-                <button type="button" class="btn btn-secondary btn-number me-auto">Return Shopping</button>
+                <a href="home.php" class="btn btn-secondary btn-number me-auto">Return Shopping</a>
                 <button type="button" class="btn btn-primary btn-number">Go to Checkout</button>
             </div>
         </div>

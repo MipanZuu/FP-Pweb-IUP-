@@ -30,7 +30,7 @@ if(isset($_POST['item_id'])){
                             <button id="decrementButton" class="input-group-text decrementButton">-</button>
                                 <input class="form-control text-center" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
                             <button id="incrementButton" class="input-group-text me-3 incrementButton">+</button>
-                            <button id="addToCart" class="btn btn-outline-primary flex-shrink-0" type="button" value="<?= $p['item_id']; ?>">
+                            <button id="addToCart" class="btn btn-outline-primary flex-shrink-0" type="submit" value="<?= $p['item_id']; ?>">
                                 <i class="bi-cart-fill me-1"></i>
                                 Add to cart
                             </button>
