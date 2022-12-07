@@ -5,8 +5,7 @@ $carts = $cart->getAllCart();
 <?php foreach($carts as $c): 
     $total_Ceckout = 0;
     $total_price = $c['item_price'] * $c['item_quantity'];
-    $total_Ceckout += $total_price;
-    
+    $total_Checkout += $total_price;
 ?>
 <div class="card mb-3 shadow-sm d-flex flex-row">
         <img src="<?= $c['item_image']; ?>" alt="Thumbnail" style="width: 100px;">
@@ -27,8 +26,8 @@ $carts = $cart->getAllCart();
         </div>
     <button id="delCart" value="<?= $c['cart_id']; ?>" type="button" class="btn btn-default border-start px-4 fs-4 text-black-50">X</button>
 </div>
+<?php endforeach; ?>
 <div class="px-4 d-flex flex-row justify-content-end mb-4">
                 <p class="fs-3 my-auto text-black-50 me-1" >Subtotal:</p>
-                <p class="fs-2 fw-semibold my-auto text-black-50" ><?= 'Rp '.number_format($total_Ceckout,2,',','.'); ?></p>
-            </div>
-<?php endforeach; ?>
+                <p class="fs-2 fw-semibold my-auto text-black-50" ><?= 'Rp '.number_format($total_Checkout,2,',','.'); ?></p>
+</div>

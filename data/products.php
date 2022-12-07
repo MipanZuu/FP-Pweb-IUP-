@@ -10,6 +10,7 @@ $products = $product->getAllProducts();
                         <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                             <!-- Product image-->
                             <img class="card-img-top" src="<?= $p['item_image']; ?>" alt="image_products" />
+                            <input type="hidden" id="item_image" value="<?= $p['item_image']; ?>">
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">

@@ -11,14 +11,17 @@ if(isset($_POST['item_id'])){
 ?>
             <div class="container px-4 px-lg-5 my-5 product-data">
                 <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div id="item_image" value="<?= $p['item_image']; ?>" class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="<?= $p['item_image']; ?>" alt="..." /></div>
+                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="<?= $p['item_image']; ?>" alt="..." /></div>
+                    <input type="hidden" id="item_image" value="<?= $p['item_image']; ?>">
                     <div class="col-md-6">
-                        <div class="small mb-1" id="item_name" value="<?= $p['item_name']; ?>"><?= $p['item_name']; ?></div>
+                        <div class="small mb-1"><?= $p['item_name']; ?></div>
                         <h1 class="display-5 fw-bolder">
+                        <input type="hidden" id="item_name" value="<?= $p['item_name']; ?>">
                             <?= $p['item_name']; ?>
                         </h1>
                         <div class="fs-5 mb-5">
-                            <span id="item_price" value="<?= $p[$rupiah]; ?>">
+                            <span>
+                            <input type="hidden" id="item_price" value="<?= $p['item_price']; ?>">
                             <?= 'Rp '.number_format($rupiah,2,',','.'); ?>
                             </span>
                         </div>

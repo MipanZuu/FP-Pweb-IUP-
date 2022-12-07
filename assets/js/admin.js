@@ -104,24 +104,23 @@ function getAllProducts() {
     event.preventDefault();
     var item_quantity = $(this).closest('.product-data').find('#inputQuantity').val();
     var item_id = $(this).val();
-    var item_price = $('#item_price').val();
     var item_name = $('#item_name').val();
+    var item_price = $('#item_price').val();
     var item_image = $('#item_image').val();
-    // alert(item_name);
 
+    // alert(item_price);
     $.ajax({
-      url: './data/addToCart.php',
-      type: 'post',
+      url: 'data/addToCart.php',
+      type: "post",
       data: {
         item_id:item_id,
         item_quantity:item_quantity,
-        item_price:item_price,
         item_name:item_name,
+        item_price:item_price,
         item_image:item_image,
       },
       success: function (data) {
-        cartProducts();
-        alert("Success adding to Cart");
+          alert("Success adding to cart");
       },
       error: function () {
         eMsg(128);
