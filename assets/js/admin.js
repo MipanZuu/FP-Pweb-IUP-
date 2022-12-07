@@ -106,7 +106,8 @@ function getAllProducts() {
     var item_id = $(this).val();
     var item_price = $('#item_price').val();
     var item_name = $('#item_name').val();
-    alert(item_name);
+    var item_image = $('#item_image').val();
+    // alert(item_name);
 
     $.ajax({
       url: './data/addToCart.php',
@@ -116,9 +117,10 @@ function getAllProducts() {
         item_quantity:item_quantity,
         item_price:item_price,
         item_name:item_name,
+        item_image:item_image,
       },
-      success: function (response) {
-        // console.log(data);
+      success: function (data) {
+        cartProducts();
         alert("Success adding to Cart");
       },
       error: function () {

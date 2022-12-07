@@ -10,11 +10,11 @@
 	return $this->getRows($sql);
     }
 
-    public function insertCart($item_id, $item_name, $item_quantity, $item_price)
+    public function insertCart($item_id, $item_name, $item_quantity, $item_price, $item_image)
 	{
-	$sql = "INSERT INTO cart(item_id, item_name item_quantity, item_price)
-    VALUES(?,?,?,?);";
-	return $this->insertRow($sql, [$item_id, $item_name, $item_quantity, $item_price]);
+	$sql = "INSERT INTO cart(item_id, item_name item_quantity, item_price, item_image)
+    VALUES(?,?,?,?,?);";
+	return $this->insertRow($sql, [$item_id, $item_name, $item_quantity, $item_price, $item_image]);
 	}
 
     public function deleteCart($cart_id)

@@ -18,5 +18,13 @@
 		return $this->getRows($sql, [$item_id]);
         }
 
+        public function getProduct($item_id)
+	    {
+		$sql = "SELECT *
+				FROM item
+				WHERE item_id = ?";
+		return $this->getRow($sql, [$item_id]);
+	    }
+
     }
     $product = new Products();
