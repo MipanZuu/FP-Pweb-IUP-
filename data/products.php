@@ -9,7 +9,7 @@ $products = $product->getAllProducts();
                         <div class="card h-100">
                         <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                             <!-- Product image-->
-                            <  class="card-img-top" src="<?= $p['item_image']; ?>" alt="image_products" />
+                            <img class="card-img-top" src="<?= $p['item_image']; ?>" alt="image_products" />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
