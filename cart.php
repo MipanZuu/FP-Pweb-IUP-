@@ -79,7 +79,7 @@
         <!-- Navbar -->
     </header>
 
-    <div class="h-50 p-5 d-inline-block"></div>
+    <div class="h-10 p-5 d-inline-block"></div>
 
     <!-- Order Lists -->
     <section id="orders">
