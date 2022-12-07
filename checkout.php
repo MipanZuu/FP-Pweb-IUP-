@@ -106,7 +106,7 @@
                 <div class="form-group mb-2">
                     <label>Billing Address</label>
                     <input type="text" class="form-control mb-1" id="billadd1" placeholder="Address 1">
-                    <input type="text" class="form-control" id="billadd1" placeholder="Address 2">
+                    <input type="text" class="form-control" id="billadd2" placeholder="Address 2">
                 </div>
                 <div class="form-group mb-2">
                     <label for="lname">City</label>
@@ -123,14 +123,30 @@
             </form>
 
             <div class="d-flex flex-column flex-fill">
-                <div id="shipping-method">
-                    test
-                </div>
-                <div id="billing-adress ">
+                <form id="shipping">
+                    <div class="form-group mb-2">
+                        <label>Shipping Address</label>
+                        <input type="text" class="form-control mb-1" id="shippingaddress" placeholder="Ship to">
+                    </div>
+                    <label>Shipping Type</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Regular Shipping
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Express Shipping
+                        </label>
+                    </div>
+                </form>
+                <hr class="my-3">
+                <div id="billing">
                     test
                 </div>
             </div>
-
             <div id="order-summary" class="flex-fill">
                 test
             </div>
