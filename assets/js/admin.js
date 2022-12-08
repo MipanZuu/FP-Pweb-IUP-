@@ -31,22 +31,6 @@ function getAllProducts() {
   }
   cartProducts();
 
-  // $(document).on('click', '#addToCart', function(){
-  //   var item_id = $(this).val();
-  //   // alert(item_id);
-
-  //   $.ajax({
-  //     url: './data/addToCart.php',
-  //     type: 'post',
-  //     data: {
-  //       "item_id":item_id,
-  //     },
-  //     success: function(response) {
-  //       alert("Success add to Cart");
-  //     }
-  //   });
-  // });
-
   $(document).on('click', '#delCart', function(){
     var cart_id = $(this).val();
     // alert(cart_id);
@@ -108,7 +92,7 @@ function getAllProducts() {
     var item_price = $('#item_price').val();
     var item_image = $('#item_image').val();
 
-    // alert(item_price);
+    // alert(item_name);
     $.ajax({
       url: 'data/addToCart.php',
       type: "post",
@@ -129,22 +113,24 @@ function getAllProducts() {
 
   });
 
-  // function getSingleProduct() {
-  //   var item_id = $("$viewItems").val();
-  //   // alert(item_id);
-  //   $.ajax({
-  //   // product-details.php?p=<?= $p['item_name'];
-  //     url: './data/productDetail.php',
-  //     type: 'post',
-  //     data: {
-  //       item_id:item_id,
-  //     },
-  //     success: function (data) {
-  //       $("#productView").html(data);
-  //     },
-  //     error: function () {
-  //       eMsg(128);
-  //     },
-  //   });
-  // } //end all_laundry
-  // getSingleProduct();
+  $(document).on('click', ".updateQuantity", function(){
+    var cart_id = $(this).closest('.productCart').find('#itemidCart').val();
+    var quantity = $('#inputQuantity').val();
+    alert(cart_id);
+    $.ajax({
+      url: 'data/updateQuantity.php',
+      type: "post",
+      data: {
+        cart_id:cart_id,
+        item_quantity:quantity,
+      },
+      success: function (data) {
+          alert("Success update");
+      },
+      error: function () {
+        eMsg(128);
+      },
+    });
+  });
+
+  

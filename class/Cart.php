@@ -13,7 +13,7 @@
     public function insertCart($item_id, $item_quantity, $item_name, $item_price, $item_image)
 	{
 	$sql = "INSERT INTO cart(item_id, item_quantity, item_name, item_price, item_image)
-    VALUES(?,?,?,?, ?);";
+    VALUES(?,?,?,?,?);";
 	return $this->insertRow($sql, [$item_id, $item_quantity, $item_name, $item_price, $item_image]);
 	}
 
@@ -23,6 +23,15 @@
 				WHERE cart_id = ?";
 		return $this->deleteRow($sql, [$cart_id]);
 	}
+
+    public function updateQuantity($cart_id, $item_quantity)
+	{
+		$sql = "UPDATE cart 
+				SET item_quantity = ?
+				WHERE cart_id = ?";
+		return $this->updateRow($sql, [$item_quantity, $cart_id]);
+	}
+
 
     }
     $cart = new Cart();

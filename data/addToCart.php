@@ -8,7 +8,7 @@ if(isset($_POST['item_id'])){
 	$item_image = $_POST['item_image'];
 
 	$saveCart = $cart->insertCart($item_id, $item_quantity, $item_name, $item_price, $item_image);
-	if($saveUser){
+	if($saveCart){
         $return['valid'] = true;
         $return['msg'] = 'Adding to cart Successfully!';
     } 
