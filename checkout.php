@@ -154,7 +154,7 @@
     </section>
 
     <!-- footer -->
-    <footer id="contact" class="text-center text-white" style="background-color: #2F3537;">
+<footer id="contact" class="text-center text-white" style="background-color: #2F3537;">
   <!-- Grid container -->
   <div class="container pt-4">
     <!-- Social media -->
