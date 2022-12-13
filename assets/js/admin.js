@@ -116,7 +116,7 @@ function getAllProducts() {
   $(document).on('click', ".updateQuantity", function(){
     var cart_id = $(this).closest('.productCart').find('#itemidCart').val();
     var quantity = $('#inputQuantity').val();
-    alert(cart_id);
+    // alert(cart_id);
     $.ajax({
       url: 'data/updateQuantity.php',
       type: "post",
