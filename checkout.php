@@ -86,7 +86,7 @@
     <section id="checkout">
         <h2 class="tittle">Your Shopping Cart</h2>
         <div class="container d-flex flex-row ">
-            <form id="billing-adress" class="flex-fill mx-5">
+            <form id="billing" class="flex-fill mx-5">
                 <div class="form-group mb-2">
                     <label for="fname">First Name</label>
                     <input type="text" class="form-control" id="fname" placeholder="John">
@@ -120,10 +120,21 @@
                     <label for="lname">Country</label>
                     <input type="text" class="form-control" id="lname">
                 </div>
-            </form>
-
-            <div class="d-flex flex-column flex-fill">
-                <form id="shipping">
+                <div class="form-group mb-2">
+                        <label for="lname">Credit/Debit Card Number</label>
+                        <input type="number" class="form-control" id="lname">
+                    </div>
+                    <div class="d-flex flex-row align-items-stretch">
+                        <div class="form-group mb-2 w-25 me-2">
+                            <label for="lname">Expirity Date</label>
+                            <input type="month" class="form-control" id="lname">
+                        </div>
+                        <div class="form-group mb-2 w-25">
+                            <label for="lname">CVV</label>
+                            <input type="number" class="form-control" id="lname">
+                        </div>
+                    </div>
+                    <hr class="my-3">
                     <div class="form-group mb-2">
                         <label>Shipping Address</label>
                         <input type="text" class="form-control mb-1" id="shippingaddress" placeholder="Ship to">
@@ -141,20 +152,46 @@
                             Express Shipping
                         </label>
                     </div>
-                </form>
-                <hr class="my-3">
-                <div id="billing">
-                    test
-                </div>
-            </div>
+                    <button type="submit" class="btn btn-primary w-100 mt-2">Checkout</button>
+            </form>
+
             <div id="order-summary" class="flex-fill">
-                test
+                <h2 class="mb-2">Order Summary</h2>
+                <div class="card d-flex flex-row mb-2">
+                    <img src="https://via.placeholder.com/100" alt="thumbnail">
+                    <div class="pt-3 p-2">
+                        <h4 class="font-weight-bold">Product Title</h4>
+                        <p>100$ x <em>1 pax.</em></p>
+                    </div>
+                </div>
+                <div class="card d-flex flex-row mb-2">
+                    <img src="https://via.placeholder.com/100" alt="thumbnail">
+                    <div class="pt-3 p-2">
+                        <h4 class="font-weight-bold">Product Title</h4>
+                        <p>100$ x <em>1 pax.</em></p>
+                    </div>
+                </div>
+                <div class="card d-flex flex-row mb-2">
+                    <img src="https://via.placeholder.com/100" alt="thumbnail">
+                    <div class="pt-3 p-2">
+                        <h4 class="font-weight-bold">Product Title</h4>
+                        <p>100$ x <em>1 pax.</em></p>
+                    </div>
+                </div>
+                <div class="card d-flex flex-row mb-2">
+                    <img src="https://via.placeholder.com/100" alt="thumbnail">
+                    <div class="pt-3 p-2">
+                        <h4 class="font-weight-bold">Product Title</h4>
+                        <p>100$ x <em>1 pax.</em></p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+
     <!-- footer -->
-    <footer id="contact" class="text-center text-white" style="background-color: #2F3537;">
+    <footer id="contact" class="text-center text-white mt-5" style="background-color: #2F3537;">
   <!-- Grid container -->
   <div class="container pt-4">
     <!-- Social media -->
