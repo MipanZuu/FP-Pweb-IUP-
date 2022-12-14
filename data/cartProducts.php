@@ -7,18 +7,19 @@ $carts = $cart->getAllCart();
     $total_price = $c['item_price'] * $c['item_quantity'];
     $total_Checkout += $total_price;
 ?>
-<div class="card mb-3 shadow-sm d-flex flex-row">
+<div class="card mb-3 shadow-sm d-flex flex-row productCart">
         <img src="<?= $c['item_image']; ?>" alt="Thumbnail" style="width: 100px;">
             <div class="container px-4 d-flex flex-row product-data">
                 <p class="fs-4 fw-semibold my-auto me-auto" ><?= $c['item_name']; ?></p>
             <div class="my-auto me-4" style="width: 8rem;">
                 <div class="input-group">
                     <span class="input-group-btn">
-                        <button id="decrementButton" type="button" class="btn btn-secondary btn-number decrementButton">-</button>
+                        <button id="decrementButton" type="button" class="btn btn-secondary btn-number updateQuantity">-</button>
                     </span>
-                    <input id="inputQuantity" type="text" name="quant[1]" class="form-control input-number text-center" value="1" min="1" max="10">
-                        <span class="input-group-btn">
-                            <button id="incrementButton" type="button" class="btn btn-primary btn-number incrementButton">+</button>
+                    <input id="inputQuantity" type="text" name="quant[1]" class="form-control input-number text-center" value="<?= $c['item_quantity']; ?>" min="1" max="10"> 
+                    <span class="input-group-btn">
+                    <input type="hidden" id="itemidCart" value="<?= $c['cart_id']; ?>">   
+                            <button id="incrementButton" type="button" class="btn btn-primary btn-number updateQuantity">+</button>
                         </span>
                 </div>
             </div>
