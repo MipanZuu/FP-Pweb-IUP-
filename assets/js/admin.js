@@ -31,6 +31,18 @@ function getAllProducts() {
   }
   cartProducts();
 
+  function checkOut() {
+    $.ajax({
+      url: './data/cartCheckOut.php',
+      type: 'post',
+      data: {},
+      success: function(response) {
+        $("#checkOut").html(response);
+      }
+    });
+  }
+  checkOut();
+
   $(document).on('click', '#delCart', function(){
     var cart_id = $(this).val();
     // alert(cart_id);
