@@ -127,7 +127,7 @@ function getAllProducts() {
 
   $(document).on('click', ".updateQuantity", function(){
     var cart_id = $(this).closest('.productCart').find('.chartID').val();
-    var quantity = $('#inputQuantity').val();
+    var quantity = $(this).closest('.productCart').find('#inputQuantity').val();
     // alert(cart_id);
     $.ajax({
       url: 'data/updateQuantity.php',
@@ -137,7 +137,9 @@ function getAllProducts() {
         item_quantity:quantity,
       },
       success: function (data) {
-          alert("Success update");
+        if(data.valid == valid){
+          cartProducts();
+        }
       },
       error: function () {
         eMsg(128);
