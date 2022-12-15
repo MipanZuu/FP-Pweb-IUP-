@@ -37,12 +37,6 @@
                     <input name="data[User][password]" required="required" placeholder=" " type="password" id="UserPassword"> 
                   </div>
                 </div>
-                <div class="control-group">
-                  <label id="remember-me">
-                    <input type="checkbox" name="data[User][remember_me]" value="1" id="UserRememberMe">
-                           Remember Me?
-                  </label>
-                </div>
 
                 <div class="control-group">
                   <p class="text-white">Don't have an account? <a href="signUp.php">Sign Up</a></p>

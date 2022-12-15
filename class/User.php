@@ -21,10 +21,18 @@ class User extends Database implements iUser {
 
 	public function change_pass($pass, $uid)
 	{
-		$sql = "UPDATE user 
+		$sql = "UPDATE users 
 				SET UserPassword = ?
 				WHERE user_id = ?";
 		return $this->updateRow($sql, [$pass, $uid]);
 	}//end change_pass
+
+	public function getUser($uid)
+	{
+	$sql = "SELECT *
+			FROM users
+			WHERE user_id = ?";
+	return $this->getRow($sql, [$uid]);
+	}
 }//end class
 $user = new User();

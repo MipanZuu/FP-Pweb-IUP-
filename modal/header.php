@@ -33,7 +33,7 @@
                     <i class="fas fa-envelope d-inline-block d-lg-none"></i>
                 </a>
                 </li>
-                <li class="nav-item me-3 me-lg-0 px-lg-2">
+                <li class="nav-item me-3 me-lg-0 ps-lg-2 pe-lg-5">
                 <a class="nav-link" href="cart.php">
                     <span class="d-none d-lg-inline-block fst-italic">
                         Cart
@@ -41,14 +41,6 @@
                     <i class="fas fa-envelope d-inline-block d-lg-none"></i>
                 </a>
                 </li>
-                </li>
-                <li class="nav-item me-3 me-lg-0 ps-lg-2 pe-lg-5">
-                <a class="nav-link" href="profile.php">
-                    <span class="d-none d-lg-inline-block fst-italic">
-                        Profile
-                    </span>
-                    <i class="fas fa-envelope d-inline-block d-lg-none"></i>
-                </a>
                 </li>
             <!-- Avatar -->
             <li class="nav-item px-4 py-1 bg-primary text-center">
