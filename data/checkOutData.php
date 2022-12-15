@@ -1,5 +1,6 @@
 <?php
 require_once('../class/CheckOut.php');
+
 if(isset($_POST['fname'])){
     $fname = $_POST['fname'];
 	$lname = $_POST['lname'];
@@ -15,11 +16,10 @@ if(isset($_POST['fname'])){
     
     $saveCheckout = $checkout->insertCheckout($fname, $lname, $emailCheckout, $telephone, $billadd, $city, $postalcode, $country);
 	// echo($saveCheckout);
-    $return['valid'] = false;
     if($saveCheckout){
         $return['valid'] = true;
         $return['msg'] = 'Checkout Successfully!';
-    }      
+    }
     echo json_encode($return);
 }
 $checkout->Disconnect();

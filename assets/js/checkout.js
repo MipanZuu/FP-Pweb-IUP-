@@ -11,7 +11,6 @@ $(document).on('submit', '#billing', function(event) {
     var country = $('#country').val();
 
     // alert(order_id);
-
     $.ajax({
           url: 'data/checkOutData.php',
           type: 'post',
