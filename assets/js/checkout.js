@@ -1,5 +1,6 @@
 $(document).on('submit', '#billing', function(event) {
     event.preventDefault();
+    // var order_id = $('#order_id').val();
     var fname = $('#fname').val();
     var lname = $('#lname').val();
     var emailCheckout = $('#emailCheckout').val();
@@ -9,72 +10,8 @@ $(document).on('submit', '#billing', function(event) {
     var postalcode = $('#postalcode').val();
     var country = $('#country').val();
 
-    if (fname.length == "") {
+    // alert(order_id);
 
-        Swal.fire({
-          type: 'warning',
-          title: 'Oops...',
-          text: 'Email is empty !'
-        });
-
-      } else if(lname.length == "") {
-
-        Swal.fire({
-          type: 'warning',
-          title: 'Oops...',
-          text: 'Username is empty !'
-        });
-
-      } else if(emailCheckout.length == "") {
-
-        Swal.fire({
-          type: 'warning',
-          title: 'Oops...',
-          text: 'Password is empty !'
-        });
-
-      } else if(telephone.length == "") {
-
-        Swal.fire({
-          type: 'warning',
-          title: 'Oops...',
-          text: 'Password is empty !'
-        });
-
-      } else if(billadd.length == "") {
-
-        Swal.fire({
-          type: 'warning',
-          title: 'Oops...',
-          text: 'Password is empty !'
-        });
-
-      } else if(city.length == "") {
-
-        Swal.fire({
-          type: 'warning',
-          title: 'Oops...',
-          text: 'Password is empty !'
-        });
-
-      } else if(postalcode.length == "") {
-
-        Swal.fire({
-          type: 'warning',
-          title: 'Oops...',
-          text: 'Password is empty !'
-        });
-
-      } else if(country.length == "") {
-
-        Swal.fire({
-          type: 'warning',
-          title: 'Oops...',
-          text: 'Password is empty !'
-        });
-
-      }
-    else {
     $.ajax({
           url: 'data/checkOutData.php',
           type: 'post',
@@ -93,11 +30,11 @@ $(document).on('submit', '#billing', function(event) {
             if(data.valid == true){
               Swal.fire({
                 type: 'success',
-                title: 'Register Successfully !',
-                text: 'Please login !'
+                title: 'checkout Successfully !',
+                text: 'Please make out a payment !'
               });
             }else{
-              alert('Invalid Username / Password!');
+              alert('Invalid input');
             }
           },
           error: function(){
@@ -108,5 +45,4 @@ $(document).on('submit', '#billing', function(event) {
               });
           }
         });
-    }
   });

@@ -10,10 +10,14 @@ if(isset($_POST['fname'])){
     $postalcode = $_POST['postalcode'];
     $country = $_POST['country'];
 
+    $fname = strtolower($fname);
+	$fname = ucwords($fname);
+    
     $saveCheckout = $checkout->insertCheckout($fname, $lname, $emailCheckout, $telephone, $billadd, $city, $postalcode, $country);
-	if($saveCheckout){
+	// echo($saveCheckout);
+    $return['valid'] = false;
+    if($saveCheckout){
         $return['valid'] = true;
-        $return['url'] = "index.php";
         $return['msg'] = 'Checkout Successfully!';
     }      
     echo json_encode($return);

@@ -6,7 +6,7 @@
         
         public function insertCheckout($fname, $lname, $emailCheckout, $telephone, $billadd, $city, $postalcode, $country)
         {
-            $sql = "INSERT INTO orders (fisrtName, lastName, email, phoneNum, address, city, postalCode, country) VALUES (?,?,?,?,?,?,?,?);";
+            $sql = "INSERT INTO orders (firstName, lastName, email, phoneNum, address, city, postalCode, country) VALUES (?,?,?,?,?,?,?,?);";
             return $this->insertRow($sql, [$fname, $lname, $emailCheckout, $telephone, $billadd, $city, $postalcode, $country]);
         }
     }

@@ -88,6 +88,7 @@
         <div class="container d-flex flex-row ">
 
             <form id="billing" method="POST" class="flex-fill mx-5">
+            <input type="hidden" id="order_id">
                 <div class="form-group mb-2">
                     <label for="fname">First Name</label>
                     <input type="text" class="form-control" name="fname" id="fname" require placeholder="John">
@@ -136,5 +137,4 @@
 
 <?php include_once('./modal/footer.php'); ?>
 <?php include_once('script.php'); ?>
-<script src="assets/js/checkout.js"></script>
 </html>
