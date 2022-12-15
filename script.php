@@ -5,3 +5,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.all.min.js"></script>
 <script src="assets/js/admin.js"></script>
 <script src="assets/js/checkout.js"></script>
+<script src="assets/js/resetPassword.js"></script>
