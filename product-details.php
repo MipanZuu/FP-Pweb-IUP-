@@ -8,23 +8,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Product Details | TEAM-X </title>
-    <link rel="stylesheet" href="../styles/product-detail.css">
+    <!-- <link rel="stylesheet" href="../styles/product-detail.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/styles/title.css">
+    <!-- <link rel="stylesheet" href="assets/styles/title.css"> -->
 </head>
 <body>
     <!--Main Navigation-->
     <?php include_once('./modal/header.php'); ?>
 
         <!-- Product section-->
-        <section class="py-5" id="productView">
-        </section>
+        <div class="py-5" id="productView">
+        </div>
 
         </div>
         <!-- Related items section-->
         <section class="py-5 bg-light">
+            
             <div class="container px-4 px-lg-5 mt-5">
                 <h2 class="fw-bolder mb-4">Related Products</h2>
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">

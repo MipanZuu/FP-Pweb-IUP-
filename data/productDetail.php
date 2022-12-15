@@ -3,7 +3,7 @@ require_once('../class/Products.php');
 if(isset($_POST['item_id'])){
 	$item_id = $_POST['item_id'];
 	$products = $product->getSingleProduct($item_id);
-}//end isset
+}
 ?>
 
 <?php foreach($products as $p): 

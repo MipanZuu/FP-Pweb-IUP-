@@ -13,12 +13,12 @@ $carts = $cart->getAllCart();
                 <p class="fs-4 fw-semibold my-auto me-auto" ><?= $c['item_name']; ?></p>
             <div class="my-auto me-4" style="width: 8rem;">
                 <div class="input-group">
+                <input type="hidden" id="itemidCart" class="chartID" value="<?= $c['cart_id']; ?>">  
                     <span class="input-group-btn">
                         <button id="decrementButton" type="button" class="btn btn-secondary btn-number updateQuantity">-</button>
                     </span>
                     <input id="inputQuantity" type="text" name="quant[1]" class="form-control input-number text-center" value="<?= $c['item_quantity']; ?>" min="1" max="10"> 
-                    <span class="input-group-btn">
-                    <input type="hidden" id="itemidCart" value="<?= $c['cart_id']; ?>">   
+                    <span class="input-group-btn"> 
                             <button id="incrementButton" type="button" class="btn btn-primary btn-number updateQuantity">+</button>
                         </span>
                 </div>
