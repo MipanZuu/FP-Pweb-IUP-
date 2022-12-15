@@ -128,7 +128,7 @@ function getAllProducts() {
   $(document).on('click', ".updateQuantity", function(){
     var cart_id = $(this).closest('.productCart').find('.chartID').val();
     var quantity = $('#inputQuantity').val();
-    alert(cart_id);
+    // alert(cart_id);
     $.ajax({
       url: 'data/updateQuantity.php',
       type: "post",
@@ -143,39 +143,4 @@ function getAllProducts() {
         eMsg(128);
       },
     });
-  });
-
-  $(document).on('click', "#changePass", function(){
-    /* Act on the event */
-    alert("HAHHA");
-    $("#modal-pass").find(".modal-title").text("Change Password");
-    $("#modal-pass").modal("show");
-  });
-
-  $(document).on("submit", "#form-change", function (event) {
-    event.preventDefault();
-    /* Act on the event */
-    var pwd = $("#pwd").val();
-    var pwd2 = $("#pwd2").val();
-    if (pwd != pwd2) {
-      alert("Password Not Match!");
-    } else {
-      //pass is match
-      $.ajax({
-        url: "data/resetPassword.php",
-        type: "post",
-        dataType: "json",
-        data: {
-          pwd: pwd,
-        },
-        success: function (data) {
-          if (data.valid == valid) {
-            $("#modal-pass").modal("hide");
-          }
-        },
-        error: function () {
-          eMsg(387);
-        },
-      });
-    }
   });
