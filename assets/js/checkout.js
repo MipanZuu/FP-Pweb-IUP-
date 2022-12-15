@@ -1,22 +1,22 @@
 $(document).on('submit', '#billing', function(event) {
     event.preventDefault();
     // var order_id = $('#order_id').val();
-    var fname = $('#fname').val();
+    var firstName = $('#fname').val();
     var lname = $('#lname').val();
     var emailCheckout = $('#emailCheckout').val();
     var telephone = $('#telephone').val();
     var billadd = $('#billadd').val();
     var city = $('#city').val();
-    var postalcode = $('#postalcode').val();
+    var postalcode = $('#postalCode').val();
     var country = $('#country').val();
 
-    // alert(order_id);
+    // alert(total);
     $.ajax({
-          url: 'data/checkOutData.php',
+          url: './data/checkOutData.php',
           type: 'post',
           dataType: 'json',
           data: {
-            fname:fname,
+            firstName:firstName,
             lname:lname,
             emailCheckout:emailCheckout,
             telephone:telephone,

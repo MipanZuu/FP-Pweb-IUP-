@@ -1,4 +1,4 @@
 <?php 
 interface icheckOut{
-	public function insertCheckout($fname, $lname, $emailCheckout, $telephone, $billadd, $city, $postalcode, $country);
+	public function insertCheckout($fname, $lname, $email, $phoneNumber, $userAddress, $city, $postalcode, $country, $total_Checkout);
 }

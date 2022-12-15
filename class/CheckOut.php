@@ -4,10 +4,10 @@
 
     class CheckOut extends Database implements icheckOut {
         
-        public function insertCheckout($fname, $lname, $emailCheckout, $telephone, $billadd, $city, $postalcode, $country)
+        public function insertCheckout($fname, $lname, $email, $phoneNumber, $userAddress, $city, $postalcode, $country, $total_Checkout)
         {
-            $sql = "INSERT INTO orders (firstName, lastName, email, phoneNum, address, city, postalCode, country) VALUES (?,?,?,?,?,?,?,?);";
-            return $this->insertRow($sql, [$fname, $lname, $emailCheckout, $telephone, $billadd, $city, $postalcode, $country]);
+            $sql = "INSERT INTO orders(firstName, lastName, emailCheckout, phoneNumber, userAddress, city, postalCode, country, totalPayment) VALUES (?,?,?,?,?,?,?,?,?);";
+            return $this->insertRow($sql, [$fname, $lname, $email, $phoneNumber, $userAddress, $city, $postalcode, $country, $total_Checkout]);
         }
     }
     $checkout = new CheckOut();

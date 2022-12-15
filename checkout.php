@@ -26,7 +26,7 @@
         <h2 class="tittle">Your Shopping Cart</h2>
         <div class="container d-flex flex-row ">
 
-            <form id="billing" method="POST" class="flex-fill mx-5">
+            <form id="billing" method="post" class="flex-fill mx-5">
             <input type="hidden" id="order_id">
                 <div class="form-group mb-2">
                     <label for="fname">First Name</label>
@@ -34,31 +34,31 @@
                 </div>
                 <div class="form-group mb-2">
                     <label for="lname">Last Name</label>
-                    <input type="text" class="form-control" id="lname" require placeholder="Doe">
+                    <input type="text" class="form-control" name="lname" id="lname"  placeholder="Doe">
                 </div>
                 <div class="form-group mb-2">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" id="emailCheckout" require placeholder="jhondoe@email.com">
+                    <input type="email" class="form-control" name="emailCheckout" id="emailCheckout"  placeholder="jhondoe@email.com">
                 </div>
-                <div class="form-group mb-2">
+                 <div class="form-group mb-2">
                     <label for="telephone">Phone Number</label>
-                    <input type="tel" class="form-control" id="telephone" require  placeholder="0000 0000 0000">
+                    <input type="tel" class="form-control" name="telephone" id="telephone"   placeholder="08xxx">
                 </div>
                 <div class="form-group mb-2">
                     <label>Billing Address</label>
-                    <input type="text" class="form-control mb-1" id="billadd" require placeholder="Address 1">
+                    <input type="text" class="form-control mb-1" name="billadd" id="billadd"  placeholder="Your Address">
                 </div>
                 <div class="form-group mb-2">
-                    <label for="lname">City</label>
-                    <input type="text" class="form-control" require id="city">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" name="city"  id="city" placeholder="Your City">
                 </div>
                 <div class="form-group mb-2">
-                    <label for="lname">Postal Code</label>
-                    <input type="number" class="form-control" require id="postalcode">
+                    <label for="postalCode">Postal Code</label>
+                    <input type="number" class="form-control" name="postalCode"  id="postalCode" placeholder="Postal Code">
                 </div>
-                <div class="form-group mb-2">
+               <div class="form-group mb-2">
                     <label for="lname">Country</label>
-                    <input type="text" class="form-control" require id="country">
+                    <input type="text" class="form-control" name="country"  id="country">
                 </div>
 
                     <button type="submit" name="orderCheckout" class="btn btn-primary w-100 mt-2">Checkout</button>

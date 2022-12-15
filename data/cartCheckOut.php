@@ -19,5 +19,5 @@ $carts = $cart->getAllCart();
 <?php endforeach; ?>
 <div class="px-4 d-flex flex-row justify-content-end mb-4">
                 <p class="fs-3 my-auto text-black-50 me-1" >Subtotal:</p>
-                <p class="fs-2 fw-semibold my-auto text-black-50" ><?= 'Rp '.number_format($total_Checkout,2,',','.'); ?></p>
+                <p class="fs-2 fw-semibold my-auto text-black-50" id="totalPrice"><?= 'Rp '.number_format($total_Checkout,2,',','.'); ?></p>
 </div>
