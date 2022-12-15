@@ -1,6 +1,7 @@
 <?php
 require_once('../class/CheckOut.php');
 require_once('../class/Cart.php');
+require_once('../class/User.php');
 
 if(isset($_POST['firstName']) && isset($_POST['emailCheckout'])){
     $fname = $_POST['firstName'];
@@ -11,7 +12,10 @@ if(isset($_POST['firstName']) && isset($_POST['emailCheckout'])){
     $city = $_POST['city'];
     $postalcode = $_POST['postalcode'];
     $country = $_POST['country'];
+
+    
     $carts = $cart->getAllCart();
+    $user_id = $_SESSION['user_logged'];
 
     $total_Ceckout = 0;
     foreach($carts as $c){
@@ -23,7 +27,7 @@ if(isset($_POST['firstName']) && isset($_POST['emailCheckout'])){
     $fname = strtolower($fname);
 	$fname = ucwords($fname);
     
-    $saveCheckout = $checkout->insertCheckout($fname, $lname, $emailCheckout, $telephone, $billadd, $city, $postalcode, $country, $total_Checkout);
+    $saveCheckout = $checkout->insertCheckout($user_id, $fname, $lname, $emailCheckout, $telephone, $billadd, $city, $postalcode, $country, $total_Checkout);
 	// echo($saveCheckout);
     if($saveCheckout){
         $return['valid'] = true;
