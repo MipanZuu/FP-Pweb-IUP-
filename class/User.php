@@ -27,12 +27,12 @@ class User extends Database implements iUser {
 		return $this->updateRow($sql, [$pass, $uname]);
 	}//end change_pass
 
-	public function getUser($uid)
+	public function getUser($username, $UserEmail)
 	{
 	$sql = "SELECT *
 			FROM users
-			WHERE user_id = ?";
-	return $this->getRow($sql, [$uid]);
+			WHERE UserName = ? OR UserEmail = ?";
+	return $this->getRow($sql, [$username, $UserEmail]);
 	}
 }//end class
 $user = new User();
